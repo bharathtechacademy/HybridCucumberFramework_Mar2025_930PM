@@ -4,6 +4,10 @@ Feature: User Authentication and Home Page Functionalities
   verifying login/logout flows, logo and header validations, forgot password process, 
   dynamic login credential testing using scenario outlines, user profile presence, 
   and validating the home page menu components for different user scenarios.
+  
+  
+  Background: Initialize all Pages
+  Given Initialize all page objects
 
   @Regression @Sanity
   Scenario: Verify Login Page Logo and Login Page Header
