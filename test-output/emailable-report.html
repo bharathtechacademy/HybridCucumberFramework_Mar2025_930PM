@@ -9,40 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">51,068</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">11,195</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangehrm.crm.application.runner.ApplicationTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1750267457659</td><td rowspan="1">8740</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.orangehrm.crm.application.runner.ApplicationTestRunner</td><td><a href="#m1">runApplicationTests</a></td><td rowspan="1">1750267436254</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td><td rowspan="5">1750267444140</td><td rowspan="5">7086</td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">com.orangehrm.crm.application.runner.ApplicationTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="6">1751385750187</td><td rowspan="6">1773</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.orangehrm.crm.application.runner.ApplicationTestRunner</td><td><a href="#m6">runApplicationTests</a></td><td rowspan="1">1751385743785</td><td rowspan="1">13</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Forgot Login Feature&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=137.0.7151.104)
-Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a34253fa04e2e877a1c1b244daf0256, clearElement {id=f.2ED438DA3A2BEA16505BD4705FB26B14.d.1C60436FE86BA80DA3AAE8499F9A712E.e.30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64005/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1a34253fa04e2e877a1c1b244daf0256)] -&gt; xpath: //h6[text()=&apos;Reset Password&apos;]]
-Session ID: 1a34253fa04e2e877a1c1b244daf0256
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.clear(Unknown Source)
-	at com.orangehrm.crm.framework.web.commons.WebCommons.enterText(WebCommons.java:102)
-	at com.orangehrm.crm.application.steps.ForgotLoginSteps.enterUsernameTorestThePassword(ForgotLoginSteps.java:59)
-	at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.enterUsernameToResetPass(StepDefinitions.java:80)
-	at ✽.User enter the username as &quot;Admin&quot; to reset the password(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:35)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.orangehrm.crm.application.runner.ApplicationTestRunner#runApplicationTests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Application Login With Valid Credentials&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Login Page Logo and Login Page Header&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Home Page Menus&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Application Login With Invalid Credentials&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify the presence of the user profile image on the home page&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify the presence of the user profile image on the home page&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()&quot; because &quot;this.loginPage&quot; is null
+	at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+	at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:41)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Login Page Logo and Login Page Header&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.orangehrm.crm.application.stepDefinitions.PageInitializer.initializePages() and com.orangehrm.crm.application.stepDefinitions.StepDefinitions.initializePages()
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:313)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Application Login With Valid Credentials&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()&quot; because &quot;this.loginPage&quot; is null
+	at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+	at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:20)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Application Login With Invalid Credentials&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()&quot; because &quot;this.loginPage&quot; is null
+	at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+	at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:20)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Forgot Login Feature&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()&quot; because &quot;this.loginPage&quot; is null
+	at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+	at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:32)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.orangehrm.crm.application.runner.ApplicationTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Home Page Menus&quot;</td><td>&quot;User Authentication and Home Page Functionalities&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()&quot; because &quot;this.loginPage&quot; is null
+	at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+	at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:53)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.orangehrm.crm.application.runner.ApplicationTestRunner#runApplicationTests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

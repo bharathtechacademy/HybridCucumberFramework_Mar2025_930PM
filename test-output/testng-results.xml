@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="1" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T22:53:55 IST" name="Suite" finished-at="2025-06-18T22:54:46 IST" duration-ms="51068">
+  <suite started-at="2025-07-01T21:32:22 IST" name="Suite" finished-at="2025-07-01T21:32:33 IST" duration-ms="11195">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-06-18T22:53:55 IST" name="Test" finished-at="2025-06-18T22:54:46 IST" duration-ms="51068">
+    <test started-at="2025-07-01T21:32:22 IST" name="Test" finished-at="2025-07-01T21:32:33 IST" duration-ms="11195">
       <class name="com.orangehrm.crm.application.runner.ApplicationTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:53:55 IST" name="setUpClass" finished-at="2025-06-18T22:53:56 IST" duration-ms="830" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:22 IST" name="setUpClass" finished-at="2025-07-01T21:32:23 IST" duration-ms="1186" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1095d23a]]>
+                <![CDATA[org.testng.TestRunner@6b52dd31]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runApplicationTests()[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:53:56 IST" name="runApplicationTests" finished-at="2025-06-18T22:53:56 IST" duration-ms="16" status="PASS">
+        <test-method signature="runApplicationTests()[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:23 IST" name="runApplicationTests" finished-at="2025-07-01T21:32:23 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runApplicationTests -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:53:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-18T22:54:04 IST" duration-ms="7828" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-01T21:32:23 IST" duration-ms="96" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -38,10 +38,55 @@
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.core.runner.DuplicateStepDefinitionException">
+            <message>
+              <![CDATA[Duplicate step definitions in com.orangehrm.crm.application.stepDefinitions.PageInitializer.initializePages() and com.orangehrm.crm.application.stepDefinitions.StepDefinitions.initializePages()]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in com.orangehrm.crm.application.stepDefinitions.PageInitializer.initializePages() and com.orangehrm.crm.application.stepDefinitions.StepDefinitions.initializePages()
+at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:313)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.runner.DuplicateStepDefinitionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:54:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-18T22:54:11 IST" duration-ms="7086" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-01T21:32:26 IST" duration-ms="2692" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -54,10 +99,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null
+at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:54:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-18T22:54:17 IST" duration-ms="6429" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-01T21:32:28 IST" duration-ms="1906" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,10 +126,21 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null
+at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:54:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-18T22:54:26 IST" duration-ms="8740" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-01T21:32:30 IST" duration-ms="1658" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,55 +153,21 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidElementStateException">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[invalid element state
-  (Session info: chrome=137.0.7151.104)
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a34253fa04e2e877a1c1b244daf0256, clearElement {id=f.2ED438DA3A2BEA16505BD4705FB26B14.d.1C60436FE86BA80DA3AAE8499F9A712E.e.30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64005/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1a34253fa04e2e877a1c1b244daf0256)] -> xpath: //h6[text()='Reset Password']]
-Session ID: 1a34253fa04e2e877a1c1b244daf0256]]>
+              <![CDATA[Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=137.0.7151.104)
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1a34253fa04e2e877a1c1b244daf0256, clearElement {id=f.2ED438DA3A2BEA16505BD4705FB26B14.d.1C60436FE86BA80DA3AAE8499F9A712E.e.30}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64005/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1a34253fa04e2e877a1c1b244daf0256)] -> xpath: //h6[text()='Reset Password']]
-Session ID: 1a34253fa04e2e877a1c1b244daf0256
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy24.clear(Unknown Source)
-at com.orangehrm.crm.framework.web.commons.WebCommons.enterText(WebCommons.java:102)
-at com.orangehrm.crm.application.steps.ForgotLoginSteps.enterUsernameTorestThePassword(ForgotLoginSteps.java:59)
-at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.enterUsernameToResetPass(StepDefinitions.java:80)
-at ✽.User enter the username as "Admin" to reset the password(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:35)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null
+at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:32)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:54:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-18T22:54:37 IST" duration-ms="10910" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-01T21:32:31 IST" duration-ms="1773" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -147,10 +180,21 @@ at ✽.User enter the username as "Admin" to reset the password(file:///C:/Train
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null
+at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:54:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-18T22:54:46 IST" duration-ms="9107" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-01T21:32:33 IST" duration-ms="1742" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -163,10 +207,21 @@ at ✽.User enter the username as "Admin" to reset the password(file:///C:/Train
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.orangehrm.crm.application.steps.LoginPageSteps.launchApplication()" because "this.loginPage" is null
+at com.orangehrm.crm.application.stepDefinitions.StepDefinitions.launch_the_application(StepDefinitions.java:36)
+at ✽.Launch the application(file:///C:/Training/Mar_2025_930PM/AutomationTraining/OrangeHRMCucumberFramework/Features/ApplicationTest.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-06-18T22:54:46 IST" name="tearDownClass" finished-at="2025-06-18T22:54:46 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.orangehrm.crm.application.runner.ApplicationTestRunner@13b6aecc]" started-at="2025-07-01T21:32:33 IST" name="tearDownClass" finished-at="2025-07-01T21:32:33 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
