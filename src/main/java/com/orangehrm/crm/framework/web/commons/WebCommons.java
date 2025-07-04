@@ -271,7 +271,7 @@ public class WebCommons {
      * @param format the date-time format to use (e.g., "yyyyMMddHHmmss")
      * @return the formatted unique ID string
      */
-    public String uniqueId(String format) {
+    public static String uniqueId(String format) {
         return new SimpleDateFormat(format).format(Calendar.getInstance().getTime());
     }
 
